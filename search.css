@@ -1,3 +1,19 @@
 .search{
     color: darkgreen;
+    font-size: 30pt;
+}
+
+#searchBar{
+    height: 35px;
+    font-size: 25pt;
+    color: purple;
+    padding: 5px;
+}
+
+.search{
+    padding: 50px;
+}
+
+#venue-FAQ{
+    padding: 30px;
 }
