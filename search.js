@@ -1,21 +1,26 @@
 //highlight function
 
-function searchHighlight(searchWords){
+function hiLite(searchWords){
+    
+    var keyWords = ["free"];
     
     if(searchWords){
+        
+        if (searchWords == keyWords){
     
-    var content = $("p").text();
-    var regExp = new RegExp(searchWords, "ig");
-    var matches = content.match(regExp);
-    
-    if (matches){
-        $("p").html(content.replace(regExp, function(match){
-            return "<span class='highlight'>" + match + "</span>";
-        }));
+       $("span").addClass("highlight");
     }
-}
+    else{
+        $(".highlight").removeClass(".highlight");
+    }
+        
+    }
+    else{
+       $(".highlight").removeClass("highlight");
+  }
     
 };
+
 
 
 
@@ -23,16 +28,14 @@ $("#searchBar").on("keyup", function(){
     
    var userInput = $(this).val().toLowerCase();
     
-    searchHighlight(userInput);
+    hiLite(userInput);
     
     $(".q-and-a, .click-reveal source collapsed, faq-answer click-reveal target collapsed, #faq-intro, h3 ").filter(function() {
 
 $(this).toggle($(this).text().toLowerCase().indexOf(userInput) > -1);
         
         
-  });
+});
     
 });
-
-
 
