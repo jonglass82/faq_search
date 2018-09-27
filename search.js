@@ -2,21 +2,52 @@
 
 function hiLite(searchWords){
     
-    var keyWords = ["free"];
+    // users 
+    //autopay
+    // stripe
+    //batch edit
+    //payroll
+    // wait list
+    //embedded schedule
+    //group charge
+    //features
+    //login
+    //cancel
+    //web store
+    //point of sale
+    //reg fee
+    //discounts
+    //donation
+    //registration
+    //data
+    //reports
+    //email feature
     
     if(searchWords){
         
-        if (searchWords == keyWords){
+        if (searchWords === "user"){
     
-       $("span").addClass("highlight");
-    }
-    else{
-        $(".highlight").removeClass(".highlight");
-    }
+            $(".user").addClass("highlight");
+            
+        }
+        
+        if(searchWords === "autopay"){
+            
+            $(".autopay").addClass("highlight");
+            
+        }
+    
+        if(searchWords === "stripe"){
+            
+            $(".stripe").addClass("highlight");
+            
+        }
+        
         
     }
     else{
        $(".highlight").removeClass("highlight");
+       
   }
     
 };
