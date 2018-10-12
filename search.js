@@ -29,8 +29,6 @@ function hiLite(searchWords){
 
 
 
-
-//$("#searchBar").on("keyup", function(){
     
 $("#searchBar").keyup(function(){
     
@@ -47,57 +45,3 @@ $(this).toggle($(this).text().toLowerCase().indexOf(userInput) > -1);
     
 });
 
-//function hiLite(searchWords){
-//    
-//    // users 
-//    //autopay
-//    // stripe
-//    //batch edit
-//    //payroll
-//    // wait list
-//    //embedded schedule
-//    //group charge
-//    //features
-//    //login
-//    //cancel
-//    //web store
-//    //point of sale
-//    //reg fee
-//    //discounts
-//    //donation
-//    //registration
-//    //data
-//    //reports
-//    //email feature
-//    
-//    if(searchWords){
-//        
-//        if (searchWords === "user"){
-//    
-//            $(".users").addClass("highlight");
-//            
-//        }
-//        
-//        if(searchWords === "autopay"){
-//            
-//            $(".autopay").addClass("highlight");
-//            
-//        }
-//    
-//        if(searchWords === "stripe"){
-//            
-//            $(".stripe").addClass("highlight");
-//            
-//        }
-//        
-//        
-//    }
-//    else{
-//       $(".highlight").removeClass("highlight");
-//       
-//  }
-//    
-//};
-//
-//
-//
